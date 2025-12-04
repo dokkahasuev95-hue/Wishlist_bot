@@ -2,8 +2,9 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from aiogram import Bot, Dispatcher, executor, types
+import os
 
-TOKEN = "8518290458:AAEEGM4Crh2alNeC6PvLPETLq8R3wcIWFy8"
+TOKEN = os.environ.get("TOKEN")
 DB_FILE = "database.json"
 
 bot = Bot(token=TOKEN)
